@@ -20,6 +20,11 @@ public class MorgieController : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1) * jumpUnit);
         }
 
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1) * jumpUnit);
+        }
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, 0) * walkUnit) ;
